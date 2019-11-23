@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+
+/**********************************************************
+ * form section
+ */
+.form-section {
+  width: 100%;
+  text-align: center;
+}
+
+.input-btn-wrapper label > input {
+  display: none;
+}
+.input-btn-wrapper label {
+  padding: 0.5em 1em;
+  text-decoration: none;
+
+  background: #668ad8;
+  color: #fff;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.input-btn-wrapper label:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+
+/**********************************************************
+ * canvas section
+ */
+.canvas-section {
+  width: 100%;
+  text-align: center;
+  margin: 50px;
+}
+
+
+/**********************************************************
+ * result section
+ */
+.r-canvas {
+  border: medium solid #0ffff0;
+}
+
+.r-dl {
+  margin-top: 10px;
+}
+

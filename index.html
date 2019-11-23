@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Cropper</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.1.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1 class="title">Image Cropper</h1>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="input-btn-wrapper">
+      <label for="img_upload">
+        Select Image
+        <input id="img_upload" type="file" accept="image/*">
+      </label>
+    </div>
+    <p>and then, select a range.</p>
+  </section>
+
+  <div class="canvas-section">
+    <canvas id="canvas" width="100" height="100"></canvas>
+  </div>
+
+  <section>
+    <table>
+      <thead>
+        <tr><th>Result</th><th></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Image Size</td><td id='r_is'></td></tr>
+        <tr>
+          <td>Selected Range</td>
+          <td>
+            <span id='r_sr1'></span><br>
+            <span id='r_sr2'></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <canvas id="r_canvas" class="r-canvas" width="100" height="100"></canvas>
+
+      <div class="r-dl">
+        <button id="r_dl">
+          Download crop image
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
